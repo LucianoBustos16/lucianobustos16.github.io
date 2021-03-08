@@ -4,6 +4,6 @@ $(window).scroll(function(){
 			'transform': 'translate(0px,' + scroll / 3 + '%)'
 		});
         $('.splash .img').css({
-			'filter': 'blur(' + scroll / 50 + 'px)'
+			'filter': 'blur(' + scroll / 100 + 'px)'
 		});
 });
