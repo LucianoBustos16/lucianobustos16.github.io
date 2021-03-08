@@ -7,6 +7,6 @@ $(window).scroll(function(){
 			'opacity': (.7 - scroll/1000)
 		});
         $('.splash .img').css({
-			'filter': 'blur(' + scroll / 80 + 'px)'
+			'filter': 'blur(' + scroll / 50 + 'px)'
 		});
 });
