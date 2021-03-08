@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  
+
+    <title>Hello, world!</title>
+    <style>
+        html,
+        body {
+          position: relative;
+        }
+    
+        body {
+          background: #eee;
+          color: #000;
+          margin: 0;
+          padding: 0;
+        }
+    
+        .splash{
+          position: relative;
+          min-height: 700px;
+          height: 700px;
+          width: 100%;
+          text-align: center;
+        }
+
+        .splash .img {
+          -webkit-filter: grayscale(1);
+          -webkit-background-size: cover;
+          -moz-background-size: cover;
+          -o-background-size: cover;
+          -ms-background-size: cover;
+          background-size: cover;
+          background-position: center center;
+          position: absolute;
+          height: 100%;
+          width: 100%;
+        }
+
+        .splash article {
+          position: absolute;
+          text-align: center;
+          height: 100%;
+          width: 100%;
+        }
+
+        .splash .gradient {
+          background-image: linear-gradient(to bottom, rgba(52,152,219,0.44) 0%, rgba(52,152,219,0.53) 16%, rgba(44,62,80,0.79) 62%, rgba(44,62,80,1) 100%);
+          -moz-opacity: .4;
+          -khtml-opacity: .4;
+          -webkit-opacity: .4;
+          opacity: .4;
+          -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=40);
+          filter: alpha(opacity=40);
+          position: absolute;
+          height: 100%;
+          width: 100%;
+      }
+
+        .header-title {
+          position: relative;
+          top: 45%;
+        }
+
+        .splash article h1 {
+          font-family: 'Roboto';
+          position: relative;
+          font-size: 3rem;
+          line-height: 3rem;
+          font-weight: 300;
+          text-transform: uppercase;
+          color: #fff;
+          top: 45%;
+          width: 80%;
+          margin: 0 auto;
+          -webkit-transform: translate(0, -45%);
+          -moz-transform: translate(0, -45%);
+          -o-transform: translate(0, -45%);
+          -ms-transform: translate(0, -45%);
+          transform: translate(0, -45%);
+        }
+
+        .splash article h1 span {
+          display: block;
+          padding: 20px 30px;
+          text-shadow: rgb(0 0 0 / 50%) 1px 1px 2px;
+        }
+
+        .splash article .meta {
+          font-family: 'Roboto';
+          position: relative;
+          font-size: .9rem;
+          line-height: .9rem;
+          font-weight: 300;
+          text-transform: uppercase;
+          color: #fff;
+          top: 50%;
+          width: 80%;
+          margin: 0 auto;
+          -webkit-transform: translate(0, -50%);
+          -moz-transform: translate(0, -50%);
+          -o-transform: translate(0, -50%);
+          -ms-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+        }
+
+        @media only screen and (max-width: 529px){
+          .splash article h1 {
+              font-size: 6vm;
+              font-size: 6vmin;
+              line-height: 2rem;
+          }
+          .splash article h1 span {
+            padding: 20px 0;
+          }
+        }
+
+      </style>
+
+  </head>
+  <body>
+
+    <section class="splash" style="height: 100vh;">
+      <div itemprop="image" class="img" data-original="https://canalshowsport.com.ar/wp-content/uploads/2020/03/vegetti-780x405.png" style="display: block; background-image: url('https://canalshowsport.com.ar/wp-content/uploads/2020/03/vegetti-780x405.png'); filter: grayscale(0);"></div>
+      <div class="gradient" style="opacity: 0.1;"></div>
+        <article>
+          <div class="header-title">
+            <h1 style="transform: translate(0px, -52px); opacity: 1;"><span itemprop="name">Etiquetas de título en HTML5</span></h1>
+        <div class="meta" style="transform: translate(0px, -17px); opacity: 1;">
+          <span class="fecha"><i class="icon-calendar"></i>17/Ago/2016</span>
+          <span class="comentarios"><i class="icon-comment"></i>126</span>
+        </div>
+          </div>
+        
+      </article>
+    </section>
+
+    <section itemprop="articleSection" class="content">
+      <article itemprop="articleBody" class="row">
+            <div class="large-12 columns articulo">
+    
+          <p>Ya estamos acostumbrados al estándar <a href="http://www.csslab.cl/etiqueta/html5/"><strong>HTML5</strong></a> hace años y lo utilizamos tranquilamente en nuestros proyectos web este 2016. Pero, ¿realmente conoces su uso y lo aprovechas? No basta con declarar un nuevo <em>doctype</em>; si no utilizas correctamente sus etiquetas será poco o nada el provecho que le sacarás al estándar. </p>
+    <p>En este artículo me enfocaré en el uso y reglas recomendadas en <strong>HTML5</strong> para las etiquetas <strong>HTML</strong> para título de contenido, las que van del &lt;h1&gt; al &lt;h6&gt;. </p>
+    <p>Por mucho tiempo se consideró que una regla en <strong>HTML</strong> y el <a href="http://www.csslab.cl/categoria/semantica/">SEO</a> era que cada página individual de un sitio debiese tener 1 sólo &lt;h1&gt;. Antes que eso, se utilizaba el logo / marca del sitio para colocar el nombre del sitio envuelto en ese &lt;h1&gt; con alguna técnica de <a href="http://www.csslab.cl/2006/09/25/image-replacement-o-como-reemplazar-contenido-por-imagen/">image-replacement</a> del momento.</p>
+    <pre class=" language-markup"><code class=" language-markup">
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>header<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">&gt;</span></span>Mi Sitio<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>content<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h2</span><span class="token punctuation">&gt;</span></span>Mi Título<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h2</span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>Lorem ipsum dolor sit amet, consectetur adipisicing elit...<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
+    </code></pre>
+    <p>Un concepto importante que debemos entender es el de <i>document outline</i>: </p>
+    <blockquote><p>El <i>document outline</i> es una estructura de un documento generado por los encabezados, títulos de formularios, títulos de tabs y cualquier otro punto de referencia apropiados para trazar el documento. El <i>user agent</i> puede utilizar esta información para generar por ejemplo, una tabla de contenido, y para tecnologías para asistir a discapacitados a través de dispositivos / browsers de accesibilidad.</p></blockquote>
+    <p>Un <i>outline</i> común en <strong>HTML4</strong> se muestra a continuación:</p>
+    <pre class=" language-markup"><code class=" language-markup">
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">&gt;</span></span>Mi Sitio<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h2</span><span class="token punctuation">&gt;</span></span>Sobre Mí<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h2</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>Lorem ipsum...<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h3</span><span class="token punctuation">&gt;</span></span>Mis Gustos<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h3</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>Lorem ipsum dolor sit amet...<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h2</span><span class="token punctuation">&gt;</span></span>Contáctame<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h2</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>...<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+    </code></pre>
+    <p>Lo que genera un outline:</p>
+    <ol>
+    <li>Mi Sitio
+    <ol>
+    <li>Sobre Mí
+    <ol>
+    <li>Mis Gustos</li>
+    </ol>
+    </li>
+    <li>Contáctame</li>
+    </ol>
+    </li>
+    </ol>
+    <p>El concepto detrás del <em>document outline </em> en <strong>HTML5</strong> sugiere que las etiquetas de título sean entendidas siempre con referencia a las <a href="http://www.csslab.cl/2007/08/21/lo-que-se-viene-html-5/">etiquetas de seccionamiento</a> incorporadas en esta versión del estándar. Las etiquetas <strong>&lt;section&gt;, &lt;article&gt;, &lt;aside&gt;</strong> y <strong>&lt;nav&gt;</strong>, pueden ayudar a crear una estructura más lógica en el <em>document outline.</em></p>
+    <p>Los aspectos más importantes a considerar dentro del <em>document outline</em> en <strong>HTML5</strong> para entender realmente cómo aplicar las etiquetas de título son los siguientes:</p>
+    <dl>
+    <dt>Sectioning root (sección raíz):</dt>
+    <dd>Es un contenedor que provee el scope para las secciones definidas dentro de él. Cada uno tiene un diferente <em>outline</em> y la etiqueta  es considerado el superior de todos. Otras son: <strong>&lt;blockquote&gt;, &lt;figure&gt;, &lt;td&gt;, &lt;details&gt;, &lt;dialog&gt;</strong>, y <strong>&lt;fieldset&gt;</strong></dd>
+    <dt>Sectioning content (sección de contenido):</dt>
+    <dd>Cada sección raíz es dividido en una serie de secciones de contenido, los que son anidables y semánticos. El tipo debe ser elegido y utilizado según la naturaleza del contenido que va a contener: <strong>&lt;section&gt;, &lt;article&gt;, &lt;nav&gt;</strong> y <strong>&lt;aside&gt;</strong></dd>
+    <dt>Heading content (contenido encabezado):</dt>
+    <dd>Son etiquetas de texto para las secciones de contenido: <strong>&lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;, &lt;h4&gt;, &lt;h5&gt;</strong> y <strong>&lt;h6&gt;</strong></dd>
+    </dl>
+    <p>Finalmente, un ejemplo práctico puede ser considerado el siguiente:</p>
+    <pre class=" language-markup"><code class=" language-markup">
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">&gt;</span></span>Mi Sitio<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>section</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">&gt;</span></span>Sobre Mí<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>Lorem ipsum...<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>section</span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">&gt;</span></span>Mis Gustos<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>Lorem ipsum dolor sit amet...<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>section</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>section</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>section</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">&gt;</span></span>Contáctame<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>...<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>section</span><span class="token punctuation">&gt;</span></span>
+    </code></pre>
+    <ol>
+    <li>Mi Sitio
+    <ol>
+    <li>Sobre Mí
+    <ol>
+    <li>Mis Gustos</li>
+    </ol>
+    </li>
+    <li>Contáctame</li>
+    </ol>
+    </li>
+    </ol>
+    <h3>Sugerencia:</h3>
+    <p>A continuación se sugiere un uso mental para las etiquetas de título dentro de una estructura de seccionamiento <strong>HTML5</strong>, el que por supuesto depende mucho del tipo de proyecto web en que estés trabajando:</p>
+    <ul>
+    <li>Utiliza una etiqueta <strong>&lt;h1&gt;</strong> por sección raíz ó sección de contenido.</li>
+    <li>Debería siempre agregarse un <strong>&lt;h1&gt;</strong> entre la etiqueta <strong>&lt;body&gt;</strong> y la primera sección de contenido, para identificar el documento completo.</li>
+    <li>Cuando una etiqueta <strong>&lt;h1&gt;</strong> identifica una sección de contenido, ésta debe estar ubicada inmediatamente al abrir la etiqueta.</li>
+    <li>Dado lo anterior, siempre la segunda etiqueta de título debe ser un <strong>&lt;h2&gt;</strong> ó menor que la anterior para crear una estructura ordenada en cascada del <em>document outline.</em></li>
+    <li>La especificación del estándar <strong>HTML5</strong> permite que cualquier etiqueta de título sea utilizada para identificar una sección, de la <strong>&lt;h1&gt;</strong> a la <strong>&lt;h6&gt;</strong>.</li>
+    </ul>
+    <h4>Links:</h4>
+    <ul>
+    <li><a href="http://w3c.github.io/html/sections.html#outlines">Outlines | HTML 5.2</a></li>
+    <li><a href="http://html5doctor.com/outlines/">Document Outlines</a></li>
+    <li><a href="http://webdesign.tutsplus.com/articles/the-truth-about-multiple-h1-tags-in-the-html5-era--webdesign-16824">The Truth About Multiple H1 Tags in the HTML5 Era</a></li>
+    </ul>
+    
+          <!--div class="weekly row">
+      <video autoplay loop muted poster="http://www.csslab.cl/wp-content/themes/csslab-72/bgvideo/weekly-poster.png">
+            <source src="http://www.csslab.cl/wp-content/themes/csslab-72/bgvideo/InkFlow03Part1Videvo.mp4" type="video/mp4" />
+            <source src="http://www.csslab.cl/wp-content/themes/csslab-72/bgvideo/InkFlow03Part1Videvo.webm" type="video/webm" />
+        </video>
+        <a href="CSSLab/csslab-weekly/">Suscríbete aquí a <b>CSSLab Weekly</b> <small>Novedades sobre estándares y tecnologías frontend -semanalmente- en tu inbox</small></a>
+    </div-->
+    <div class="meta row">
+      <div class="large-3 columns">
+        <aside class="details">
+          <h5>Fecha Publicación</h5>
+            <span class="fecha"><i class="icon-calendar"></i> 17/Ago/2016</span>
+            <h5>Comentarios</h5>
+            <span class="comentarios"><i class="icon-comment"></i> <a href="http://www.csslab.cl/2016/08/17/html5-y-seo/#comments">126 comentarios</a></span>
+            <h5>
+              Compartir
+          </h5>
+            <div class="share-buttons">
+            <a href="https://www.facebook.com/sharer/sharer.php?u=http://www.csslab.cl/2016/08/17/html5-y-seo/" class="share icon-facebook">Facebook</a>
+            <a href="https://twitter.com/intent/tweet?url=http://www.csslab.cl/2016/08/17/html5-y-seo/&amp;text=Etiquetas de título en HTML5&amp;via=csslab" class="share icon-twitter">Twitter</a>
+            <a href="https://plus.google.com/share?url=http://www.csslab.cl/2016/08/17/html5-y-seo/" class="share icon-gplus">Google</a>
+            <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http://www.csslab.cl/2016/08/17/html5-y-seo/&amp;source=CSSLab.cl&amp;title=Etiquetas de título en HTML5" class="share icon-linkedin">LinkedIn</a>
+            </div>
+        </aside>
+      </div>
+      <div class="large-3 columns">
+        <aside>
+          <h5>Categorías</h5>
+          <ul class="post-categories">
+      <li><a href="http://www.csslab.cl/categoria/html/" rel="category tag">HTML</a></li>
+      <li><a href="http://www.csslab.cl/categoria/semantica/" rel="category tag">Semántica</a></li></ul>
+          <h5>Tags</h5>
+          <ul class="post-tags">
+          <li><a href="http://www.csslab.cl/etiqueta/accesibilidad/" rel="tag">accesibilidad</a></li><li><a href="http://www.csslab.cl/etiqueta/html5/" rel="tag">HTML5</a></li><li><a href="http://www.csslab.cl/etiqueta/semantica/" rel="tag">Semántica</a></li>			</ul>
+        </aside>
+      </div>
+      <div class="large-6 columns">
+        <aside itemprop="author" itemscope="" itemtype="https://schema.org/Person" class="author">
+          <h5>El Autor: <span itemprop="name">Jorge Epuñan H.</span></h5>
+          <img alt="CSSLab: autor" src="https://0.gravatar.com/avatar/87ca2057d24e0462c852e61f7cfb5069?s=120&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D50&amp;r=G" class="avatar avatar-120 photo" height="120" width="120">
+          <p>Soy quien escribe en este sitio: diseñador gráfico de profesión, desarrollador web por preferencia y amante de la interacción humano-computador. Cuando no pienso en web, salgo a trotar por mis barrios en Santiago, Chile o me junto con amigos a un bar a conversar sobre nuevas tendencias y tecnologías. Twitter <a href="https://www.twitter.com/csslab" target="_blank" title="Enlace externo a &quot;CSSLab Twitter&quot;">profesional</a> y <a href="https://www.twitter.com/jorgeepunan" target="_blank" title="Enlace externo a &quot;Jorge Epuñan Twitter&quot;">personal</a>, además del <a href="//www.csslab.cl/contacto/" title="Contacto CSSLab.cl">Contacto</a>.</p>
+        </aside>
+      </div>
+    </div>        </div>
+        </article>
+        </section>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="efectos.js"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
