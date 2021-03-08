@@ -6,4 +6,7 @@ $(window).scroll(function(){
         $('.gradient').css({
 			'opacity': (.7 - scroll/1000)
 		});
+        $('.splash .img').css({
+			'filter': 'blur(' + scroll / 100 + 'px)'
+		});
 });
