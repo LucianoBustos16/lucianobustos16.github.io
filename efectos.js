@@ -15,7 +15,32 @@ $(window).scroll(function(){
 	var windowWidth = $(window).width();
 		var scroll = $(window).scrollTop();
 
-		$('.acerca-de article').css({
+		$('.last-new article').css({
 			'transform': 'translate(0px, -' + scroll / 15 + '%)'
 		});
 });
+
+
+ var swiper = new Swiper('.swiper-container', {
+	slidesPerView: 2,
+	spaceBetween: 20,
+	freeMode: true,
+	pagination: {
+	  el: '.swiper-pagination',
+	  clickable: true,
+	},
+	breakpoints: {
+	  640: {
+		slidesPerView: 3,
+		spaceBetween: 30,
+	  },
+	  768: {
+		slidesPerView: 3,
+		spaceBetween: 40,
+	  },
+	  1024: {
+		slidesPerView: 3,
+		spaceBetween: 50,
+	  },
+	}
+  });
