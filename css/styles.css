@@ -53,6 +53,18 @@
 
 .noticias {
   padding-top: 600px; }
+  .noticias .card {
+    background: #172A46;
+    border: none;
+    border-radius: 10px;
+    overflow: hidden; }
+    .noticias .card .card-title {
+      color: white; }
+    .noticias .card .card-text {
+      font-size: 0.75rem; }
+    .noticias .card .card-footer {
+      background-color: transparent;
+      border-top: none; }
 
 @media (max-width: 992px) {
   .last-new .contenedor .foto {
@@ -80,7 +92,7 @@
       margin: 0; }
 
   .noticias {
-    padding-top: 260px; } }
+    padding-top: 271px; } }
 html,
 body {
   margin: 0;
