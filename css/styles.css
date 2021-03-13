@@ -15,22 +15,22 @@
     font-size: 0.875rem;
     font-weight: 600; }
 
-.acerca-de .contenedor {
+.last-new .contenedor {
   overflow: visible;
   position: relative; }
-  .acerca-de .contenedor .foto {
+  .last-new .contenedor .foto {
     width: 80%;
     position: absolute;
     left: 0;
     top: 50px;
     z-index: 0; }
-    .acerca-de .contenedor .foto img {
+    .last-new .contenedor .foto img {
       width: 70%;
       vertical-align: top;
       border-radius: 15px;
       -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.35);
       box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.35); }
-  .acerca-de .contenedor article {
+  .last-new .contenedor article {
     background: #172A46;
     padding: 40px;
     width: 50%;
@@ -41,41 +41,46 @@
     -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.35);
     box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.35);
     border-radius: 15px; }
-    .acerca-de .contenedor article h3 {
+    .last-new .contenedor article h3 {
       font-size: 50px;
-      font-weight: 300;
+      font-weight: 400;
       margin-bottom: 40px;
       color: white; }
-    .acerca-de .contenedor article p {
+    .last-new .contenedor article p {
       line-height: 28px;
       margin-bottom: 15px;
       color: #AAB3D3; }
 
+.noticias {
+  padding-top: 600px; }
+
 @media (max-width: 992px) {
-  .acerca-de .contenedor .foto {
+  .last-new .contenedor .foto {
     position: relative;
     width: 100%; }
-  .acerca-de .contenedor article {
+  .last-new .contenedor article {
     position: relative;
     width: 70%;
     top: -50px;
     transform: translate(0px, 0);
     width: 70%;
     padding: 20px; }
-    .acerca-de .contenedor article h3 {
+    .last-new .contenedor article h3 {
       font-size: 18px;
-      font-weight: 400;
       margin-bottom: 15px;
       top: 100px; }
-    .acerca-de .contenedor article p {
+    .last-new .contenedor article p {
       line-height: 20px;
       font-size: 12px; }
-    .acerca-de .contenedor article .footer .autor {
+    .last-new .contenedor article .footer .autor {
       font-size: 1rem;
       margin: 0; }
-    .acerca-de .contenedor article .footer .date {
+    .last-new .contenedor article .footer .date {
       font-size: 12px;
-      margin: 0; } }
+      margin: 0; }
+
+  .noticias {
+    padding-top: 260px; } }
 html,
 body {
   margin: 0;
