@@ -1,8 +1,62 @@
 @import url(https://fonts.googleapis.com/css?family=Exo+2:200i);
+.atajos .entry .link {
+  background: white;
+  display: flex;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 7px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+  color: #2F3449;
+  text-decoration: none; }
+  .atajos .entry .link .icon {
+    font-size: 0.875rem;
+    margin-right: 10px; }
+  .atajos .entry .link .title {
+    font-size: 0.875rem;
+    font-weight: 600; }
+
+.noticias {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 15px;
+  align-items: stretch;
+  background: #172A46;
+  border-radius: 10px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.4);
+  padding: 0;
+  overflow: hidden; }
+  .noticias .card-body-lb {
+    display: grid;
+    align-content: space-between; }
+    .noticias .card-body-lb .title {
+      align-self: start; }
+    .noticias .card-body-lb .footer {
+      align-self: end; }
+      .noticias .card-body-lb .footer .autor,
+      .noticias .card-body-lb .footer .date {
+        margin: 0; }
+  .noticias .img {
+    grid-column: span 3;
+    overflow: hidden; }
+    .noticias .img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+  .noticias .card-body-lb {
+    grid-column: span 3;
+    padding: 20px; }
+
+@media (max-width: 992px) {
+  .noticias .img {
+    grid-column: span 6; }
+  .noticias .card-body-lb {
+    grid-column: span 6; } }
 html,
 body {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  background: #0A192F;
+  color: #AAB3D3; }
 
 .splash {
   height: 80vh;
@@ -10,7 +64,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("/img/bg.jpg");
+  background-image: url("https://i1.wp.com/lbdtw.com.ar/wp-content/uploads/Gigante-Alberdi.jpg?fit=1333%2C1000&ssl=1");
   background-position: center;
   background-size: cover; }
   .splash .header-container {
@@ -31,7 +85,7 @@ body {
       -webkit-animation: neon 3s ease infinite; }
   .splash .overlay {
     background: #000;
-    opacity: 0.5;
+    opacity: 0.6;
     position: absolute;
     height: 100%;
     width: 100%; }
