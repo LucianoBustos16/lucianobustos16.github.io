@@ -15,42 +15,60 @@
     font-size: 0.875rem;
     font-weight: 600; }
 
-.noticias {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  gap: 15px;
-  align-items: stretch;
-  background: #172A46;
-  border-radius: 10px;
-  box-shadow: 0 0 6px rgba(0, 0, 0, 0.4);
-  padding: 0;
-  overflow: hidden; }
-  .noticias .card-body-lb {
-    display: grid;
-    align-content: space-between; }
-    .noticias .card-body-lb .title {
-      align-self: start; }
-    .noticias .card-body-lb .footer {
-      align-self: end; }
-      .noticias .card-body-lb .footer .autor,
-      .noticias .card-body-lb .footer .date {
-        margin: 0; }
-  .noticias .img {
-    grid-column: span 3;
-    overflow: hidden; }
-    .noticias .img img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover; }
-  .noticias .card-body-lb {
-    grid-column: span 3;
-    padding: 20px; }
+.acerca-de .contenedor {
+  overflow: visible;
+  position: relative; }
+  .acerca-de .contenedor .foto {
+    width: 80%;
+    position: absolute;
+    left: 0;
+    top: 50px;
+    z-index: 0; }
+    .acerca-de .contenedor .foto img {
+      width: 70%;
+      vertical-align: top;
+      border-radius: 15px;
+      -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.35);
+      box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.35); }
+  .acerca-de .contenedor article {
+    background: #172A46;
+    padding: 40px;
+    width: 50%;
+    position: relative;
+    float: right;
+    top: 250px;
+    z-index: 1;
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.35);
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.35);
+    border-radius: 15px; }
+    .acerca-de .contenedor article h3 {
+      font-size: 50px;
+      font-weight: 300;
+      margin-bottom: 40px;
+      color: white; }
+    .acerca-de .contenedor article p {
+      line-height: 28px;
+      margin-bottom: 15px;
+      color: #AAB3D3; }
 
 @media (max-width: 992px) {
-  .noticias .img {
-    grid-column: span 6; }
-  .noticias .card-body-lb {
-    grid-column: span 6; } }
+  .acerca-de .contenedor .foto {
+    position: relative;
+    width: 100%; }
+  .acerca-de .contenedor article {
+    position: relative;
+    width: 70%;
+    top: -50px;
+    transform: translate(0px, 0);
+    width: 70%;
+    padding: 20px; }
+    .acerca-de .contenedor article h3 {
+      font-size: 30px;
+      margin-bottom: 15px;
+      top: 100px; }
+    .acerca-de .contenedor article p {
+      line-height: 24px;
+      font-size: 14px; } }
 html,
 body {
   margin: 0;
