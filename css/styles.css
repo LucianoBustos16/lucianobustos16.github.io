@@ -63,12 +63,19 @@
     width: 70%;
     padding: 20px; }
     .acerca-de .contenedor article h3 {
-      font-size: 30px;
+      font-size: 18px;
+      font-weight: 400;
       margin-bottom: 15px;
       top: 100px; }
     .acerca-de .contenedor article p {
-      line-height: 24px;
-      font-size: 14px; } }
+      line-height: 20px;
+      font-size: 12px; }
+    .acerca-de .contenedor article .footer .autor {
+      font-size: 1rem;
+      margin: 0; }
+    .acerca-de .contenedor article .footer .date {
+      font-size: 12px;
+      margin: 0; } }
 html,
 body {
   margin: 0;
