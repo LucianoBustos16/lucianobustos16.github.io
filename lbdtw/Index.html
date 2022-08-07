@@ -1,0 +1,394 @@
+<!doctype html>
+<html lang="es">
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LBDTw</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+  <body>
+    
+        <!-- Menu Header -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top" aria-label="Menu principal" style="box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.05);">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <img src="assets/brand/LBDTwLogo.svg" alt="" width="30" height="24" class="d-inline-block align-text-top">
+            LBDTw
+            </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExample05">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#"><i class="fi fi-rr-home"></i>Home</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fi fi-rr-interface"></i>Noticias</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="Posiciones.html"><i class="fi fi-rr-trophy"></i>Posiciones</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link"><i class="fi fi-rr-comment"></i>Contacto</a>
+            </li>
+        </ul>
+
+        </div>
+    </div>
+    </nav>
+
+
+<main>
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-6 col-6 d-flex align-items-center justify-content-center text-center">
+                <h2 class="description-sit fw-bold">Politicamente
+                    <br>
+                    <span id="typing"></span><span class="type-cursor">|</span>
+                </h2>
+            </div>
+            <div class="col-6">
+                <img src="./assets/Vegetti.png" class="img-fluid" alt="">
+            </div>
+        </div>
+    </div>
+
+
+
+<div class="container my-4">
+
+    <!-- Banner/Ribbons partidos (opcional) -->
+    <div class="p-4 p-md-5 mb-4 rounded d-flex flex-row" style="background-color: #C1E9FF;">
+        <div class="col-3 col-md-4 img img-fluid d-flex justify-content-center">
+            <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_xFpiNt.json" background="transparent" speed="1" style="width: 150px;height: auto;" loop="" autoplay=""></lottie-player>
+        </div>
+      <div class="col-9 col-md-8 px-0 text-center">
+        <h1 class="display-4" style="font-weight: 700; color: #363F49;">Fútbol en vivo</h1>
+        <p class="lead my-3" style="color: #363F49;">Belgrano vs Mitre</p>
+        <button type="button" class="btn btn-dark">Ver ahora</button>
+      </div>
+    </div>
+
+
+    <!-- Accesos rápidos -->
+    <div class="row align-items-md-stretch atajos d-none d-md-flex">
+        <a href="#" class="col-3">
+          <div class="h-100 p-2 rounded-3 d-flex flex-column flex-lg-row align-items-center" style="color: #8FDE98; background: #D2FAD7;">
+            <div class="icon mx-3">
+                <i class="fi fi-rr-interface"></i>
+            </div>
+            <div class="desc">
+                <h4>Noticias</h4>
+                <p class="d-none d-md-block">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+            </div>
+          </div>
+        </a>
+
+        <a href="#" class="col-3">
+            <div class="h-100 p-2 rounded-3 d-flex flex-column flex-lg-row align-items-center" style="color: #0598D1; background: #d2e0fa;">
+                <div class="icon mx-3">
+                  <i class="fi fi-rr-computer"></i>
+                </div>
+              <div class="desc">
+                  <h4>LBDTw Tv</h4>
+                  <p class="d-none d-md-block">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+              </div>
+            </div>
+        </a>
+
+          <a href="#" class="col-3">
+            <div class="h-100 p-2 rounded-3 d-flex flex-column flex-lg-row align-items-center" style="color: #8882EA; background: #E0DBFC;">
+                <div class="icon mx-3">
+                    <i class="fi fi-rr-trophy"></i>
+                </div>
+              <div class="desc">
+                  <h4>Prode</h4>
+                  <p class="d-none d-md-block">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+              </div>
+            </div>
+        </a>
+
+          <a data-bs-toggle="modal" data-bs-target="#exampleModal" class="col-3" style="cursor: pointer;">
+            <div class="h-100 p-2 rounded-3 d-flex flex-column flex-lg-row align-items-center" style="color: #CD737D; background: #FCCFD5;">
+                <div class="icon mx-3">
+                <i class="fi fi-rr-flame"></i>
+            </div>
+              <div class="desc">
+                  <h4>Seguinos</h4>
+                  <p class="d-none d-md-block">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+              </div>
+            </div>
+        </a>  
+    </div>
+</main>
+
+
+    <!-- Noticias -->
+
+<article class="" style="background-color: #F3F9FF;">
+    <div class="container py-3">
+        <div>
+            <h2 class="my-4 text-center">Noticias</h2>
+        </div>
+        <div class="row">
+          
+          <div class="col-xl-12 col-lg-12 col-md-12 col-12">
+            <!-- Card -->
+            <div class="card mb-4 shadow-lg">
+              <div class="row g-0">
+                <!-- Image -->
+                <a href="blog-single.html" class="col-lg-8 col-md-12 col-12 bg-cover img-left-rounded">
+                  <img src="https://i0.wp.com/lbdtw.com.ar/wp-content/uploads/20220801_220351.jpg?w=1458&ssl=1" class="img-fluid" alt=""></a>
+                <div class="col-lg-4 col-md-12 col-12">
+                  <!-- Card body -->
+                  <div class="card-body">
+                    <a href="#" class="fs-5 mb-3 fw-semi-bold d-block tag">Análisis</a>
+                    <h1 class="mb-2 mb-lg-4"> <a href="blog-single.html" class="text-inherit">
+                        Paso en falso
+                      </a>
+                    </h1>
+                    <p>Belgrano cayó ante Ferro en su visita a Caballito. Fue por 2-0 con goles de Leandro Gordillo y Misael Tarón. La B volvió a caer luego de 10 fechas.</p>
+                    <!-- Media content -->
+                    <div class="row align-items-center g-0 mt-lg-7 mt-4">
+                      <div class="col-auto">
+                        	<!-- Img  -->
+                        <img src="../assets/images/avatar/avatar-6.jpg" alt="" class="rounded-circle avatar-sm me-2">
+                      </div>
+                      <div class="col lh-1 ">
+                        <h5 class="mb-1">Dustin Warren</h5>
+                        <p class="fs-6 mb-0">September 13, 2020</p>
+                      </div>
+                      <div class="col-auto">
+
+                        <p class="fs-6 mb-0">6 Min Read</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-lg-3 col-md-6 col-12">
+            <!-- Card -->
+            <div class="card mb-4 shadow-lg">
+              <a href="blog-single.html" class="card-img-top">
+                	<!-- Img  -->
+                <img src="https://i0.wp.com/lbdtw.com.ar/wp-content/uploads/20220801_220351.jpg?w=1458&ssl=1" class="card-img-top rounded-top-md" alt=""></a>
+              <!-- Card body -->
+              <div class="card-body">
+                <a href="#" class="fs-5 mb-2 fw-semi-bold d-block text-success">Courses</a>
+                <h3><a href="blog-single.html" class="text-inherit">
+                    How to become modern Stack Developer in 2020
+                  </a>
+                </h3>
+                <p>Lorem ipsum dolor sit amet, accu msan in, tempor dictum nequrem ipsum...</p>
+                <!-- Media content -->
+                <div class="row align-items-center g-0 mt-4">
+                  <div class="col-auto">
+                    <img src="../assets/images/avatar/avatar-7.jpg" alt="" class="rounded-circle avatar-sm me-2">
+                  </div>
+                  <div class="col lh-1">
+                    <h5 class="mb-1">Reva Yokk</h5>
+                    <p class="fs-6 mb-0">September 05, 2020</p>
+                  </div>
+                  <div class="col-auto">
+                    <p class="fs-6 mb-0">20 Min Read</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-12">
+            <!-- Card -->
+             <div class="card mb-4 shadow-lg">
+              <a href="blog-single.html" class="card-img-top"> <img src="https://i0.wp.com/lbdtw.com.ar/wp-content/uploads/20220801_220351.jpg?w=1458&ssl=1" class="card-img-top rounded-top-md" alt=""></a>
+              <!-- Card body -->
+              <div class="card-body">
+                <a href="#" class="fs-5 fw-semi-bold d-block mb-3 text-danger">Tutorial</a>
+                <h3><a href="blog-single.html" class="text-inherit">
+                    What is PHP Function? For Beginner’s Guide
+                  </a>
+                </h3>
+                <p>Lorem ipsum dolor sit amet, accu msan in, tempor dictum nequrem ipsum...</p>
+                	<!-- Row  -->
+                <div class="row align-items-center g-0 mt-4">
+                  <div class="col-auto">
+                    <img src="../assets/images/avatar/avatar-8.jpg" alt="" class="rounded-circle avatar-sm me-2">
+                  </div>
+                  <div class="col lh-1">
+                    <h5 class="mb-1">Lisa Menon</h5>
+                    <p class="fs-6 mb-0">September 06, 2020</p>
+                  </div>
+                  <div class="col-auto">
+                    <p class="fs-6 mb-0">8 Min Read</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-lg-3 col-md-6 col-12">
+            <!-- Card -->
+             <div class="card mb-4 shadow-lg">
+              <a href="blog-single.html" class="card-img-top"> <img src="https://i0.wp.com/lbdtw.com.ar/wp-content/uploads/20220801_220351.jpg?w=1458&ssl=1" class="card-img-top rounded-top-md" alt=""></a>
+              <!-- Card body-->
+              <div class="card-body">
+                <a href="#" class="fs-5 fw-semi-bold d-block mb-3 text-primary">Workshop</a>
+                <h3><a href="blog-single.html" class="text-inherit">
+                    What is Cyber Security? A Beginner’s Guide
+                  </a>
+                </h3>
+                <p>Lorem ipsum dolor sit amet, accu msan in, tempor dictum nequrem ipsum...</p>
+                <!-- Media content -->
+                	<!-- Row -->
+                <div class="row align-items-center g-0 mt-4">
+                  <div class="col-auto">
+                    <img src="../assets/images/avatar/avatar-9.jpg" alt="" class="rounded-circle avatar-sm me-2">
+                  </div>
+                  <div class="col lh-1">
+                    <h5 class="mb-1">Maria Pinto</h5>
+                    <p class="fs-6 mb-0">September 07, 2020</p>
+                  </div>
+                  <div class="col-auto">
+                    <p class="fs-6 mb-0">15 Min Read</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-12">
+            <!-- Card -->
+             <div class="card mb-4 shadow-lg">
+              <a href="blog-single.html" class="card-img-top"> <img src="https://i0.wp.com/lbdtw.com.ar/wp-content/uploads/20220801_220351.jpg?w=1458&ssl=1" class="card-img-top rounded-top-md" alt=""></a>
+              <!-- Card body-->
+              <div class="card-body">
+                <a href="#" class="fs-5 fw-semi-bold d-block mb-3 text-primary">Workshop</a>
+                <h3><a href="blog-single.html" class="text-inherit">
+                    What is Cyber Security? A Beginner’s Guide
+                  </a>
+                </h3>
+                <p>Lorem ipsum dolor sit amet, accu msan in, tempor dictum nequrem ipsum...</p>
+                <!-- Media content -->
+                	<!-- Row -->
+                <div class="row align-items-center g-0 mt-4">
+                  <div class="col-auto">
+                    <img src="../assets/images/avatar/avatar-9.jpg" alt="" class="rounded-circle avatar-sm me-2">
+                  </div>
+                  <div class="col lh-1">
+                    <h5 class="mb-1">Maria Pinto</h5>
+                    <p class="fs-6 mb-0">September 07, 2020</p>
+                  </div>
+                  <div class="col-auto">
+                    <p class="fs-6 mb-0">15 Min Read</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          
+
+          <!-- Buttom -->
+          <div class="col-xl-12 col-lg-12 col-md-12 col-12 text-center mt-4">
+            <a href="#" class="btn btn-primary">
+              <div class="spinner-border spinner-border-sm me-2" role="status">
+                <span class="visually-hidden">Loading...</span>
+              </div>Load More
+            </a>
+          </div>
+        </div>
+      </div>
+</article>
+
+
+<nav class="navbar fixed-bottom bg-white d-lg-none navbar-bottom">
+    <div class="container menu">
+        <ul class="container-fluid d-flex justify-content-between">
+            <li id="menu-item-4596" class="menu-item active"><a href="#" aria-current="page"><i class="fi fi-rr-home"></i></a></li>
+            <li id="menu-item-4612" class="menu-item "><a href="#"><i class="fi fi-rr-document-signed"></i></a></li>
+            <li id="menu-item-4599" class="menu-item"><a href="Posiciones.html"><i class="fi fi-rr-trophy"></i></a></li>
+            <li data-bs-toggle="modal" data-bs-target="#exampleModal" id="menu-item-4758" class="menu-item "><a href="#"><i class="fi fi-rr-comment"></i></a></li>
+        </ul>
+    </div>
+  </nav>
+
+  <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <a href="#" class="item-contect border">
+            <div class="border-contect"></div>
+            <i class="fi fi-rr-comment"></i>
+            <p>Twitter</p>
+
+
+          </a>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script>
+        var pos = 0;
+        var turn = 0;
+        var data = ['Correctos(?','Incorrectos'];
+        var speed = 200;
+      
+        setTimeout(typeWriter, speed);
+      
+        function typeWriter() {
+          if (pos < data[turn].length) {
+            document.getElementById("typing").innerHTML += data[turn].charAt(pos);
+            pos++;
+            setTimeout(typeWriter, speed);
+          } else {
+            setTimeout(erase, speed+100);
+          }
+        }
+      
+        function erase() {
+          if (pos >= 0) {
+              var str=data[turn].toString().substring(0, pos);
+              document.getElementById("typing").innerHTML = str;
+              pos--;
+              setTimeout(erase, speed-100);
+            } else {
+              turn++;
+              if(turn>=data.length)
+                turn=0;
+              setTimeout(typeWriter, speed);
+            }
+        }
+        </script>
+      
+  </body>
+</html>
