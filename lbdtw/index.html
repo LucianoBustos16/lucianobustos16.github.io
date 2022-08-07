@@ -61,7 +61,7 @@
 <main>
 
     <!-- Menu Header -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light" aria-label="Menu principal">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white" aria-label="Menu principal">
         <div class="container">
             <a class="navbar-brand" href="#">
                 <img src="LBDTwLogo.svg" alt="" width="30" height="24" class="d-inline-block align-text-top">
@@ -484,10 +484,35 @@
             <li id="menu-item-4596" class="menu-item active "><a href="#" aria-current="page"><i class="fi fi-rr-home"></i></a></li>
             <li id="menu-item-4612" class="menu-item "><a href="#"><i class="fi fi-rr-interface"></i></a></li>
             <li id="menu-item-4599" class="menu-item "><a href="#"><i class="fi fi-rr-computer"></i></a></li>
-            <li id="menu-item-4758" class="menu-item "><a href="#"><i class="fi fi-rr-comment"></i></a></li>
+            <li data-bs-toggle="modal" data-bs-target="#exampleModal" id="menu-item-4758" class="menu-item "><a href="#"><i class="fi fi-rr-comment"></i></a></li>
         </ul>
     </div>
   </nav>
+
+  <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <a href="#" class="item-contect border">
+            <div class="border-contect"></div>
+            <i class="fi fi-rr-comment"></i>
+            <p>Twitter</p>
+
+
+          </a>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
