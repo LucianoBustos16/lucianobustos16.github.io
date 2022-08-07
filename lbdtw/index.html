@@ -15,7 +15,7 @@
     <link href="navbar.css" rel="stylesheet">
 
 <style>
-    i.fi{
+    .atajos i.fi{
         font-size: 48px;
     }
 
@@ -27,6 +27,31 @@
         box-shadow: 0px 0px 6px rgb(0 0 0 / 10%);
     }
 
+    .navbar i {
+        font-size: 16px;
+    }
+
+    .navbar-bottom a{
+        text-decoration: none;
+    }
+
+    .navbar-bottom ul{
+        margin-bottom: 0;
+    }
+
+
+    .navbar-bottom li{
+        list-style: none;
+    }
+
+    .navbar-bottom li i{
+        font-size: 24px;
+        color: #B7BBC3;
+    }
+
+    .navbar-bottom li.active > a i{
+        color: #0598D1;
+    }
 
 </style>
   </head>
@@ -39,7 +64,7 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light" aria-label="Menu principal">
         <div class="container">
             <a class="navbar-brand" href="#">
-                <img src="LBDTwLogo.svg" alt="" width="30" height="24" class="d-inline-block align-text-top">
+                <img src="assets/brand/LBDTwLogo.svg" alt="" width="30" height="24" class="d-inline-block align-text-top">
                 LBDTw
               </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
@@ -49,16 +74,16 @@
           <div class="collapse navbar-collapse" id="navbarsExample05">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="#"><i class="fi fi-rr-home"></i>Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Noticias</a>
+                <a class="nav-link" href="#"><i class="fi fi-rr-interface"></i>Noticias</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link">Prode</a>
+                <a class="nav-link"><i class="fi fi-rr-trophy"></i>Prode</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link">Contacto</a>
+                <a class="nav-link"><i class="fi fi-rr-comment"></i>Contacto</a>
               </li>
             </ul>
         
@@ -69,11 +94,11 @@
 <div class="container my-4">
 
     <!-- Banner/Ribbons partidos (opcional) -->
-    <div class="p-4 p-md-5 mb-4 rounded d-flex flex-row bg-light">
-        <div class="img">
-            <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_xFpiNt.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player>
+    <div class="p-4 p-md-5 mb-4 rounded d-flex flex-row" style="background-color: #C1E9FF;">
+        <div class="col-md-4 img img-fluid d-flex justify-content-center">
+            <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_xFpiNt.json" background="transparent" speed="1" style="width: 150px;height: auto;" loop="" autoplay=""></lottie-player>
         </div>
-      <div class="col-md-6 px-0">
+      <div class="col-md-8 px-0 text-center">
         <h1 class="display-4">Fútbol en vivo</h1>
         <p class="lead my-3">Belgrano vs Mitre</p>
         <button type="button" class="btn btn-dark">Ver ahora</button>
@@ -82,7 +107,7 @@
 
 
     <!-- Accesos rápidos -->
-    <div class="row align-items-md-stretch atajos">
+    <div class="row align-items-md-stretch atajos d-none d-md-flex">
         <a href="#" class="col-3">
           <div class="h-100 p-2 rounded-3 d-flex flex-column flex-lg-row align-items-center" style="color: #8FDE98; background: #D2FAD7;">
             <div class="icon mx-3">
@@ -135,8 +160,11 @@
 
 
     <!-- Noticias -->
-<article class="bg-light">
+<article class="" style="background-color: #F3F9FF;">
     <div class="container">
+        <div>
+            <h2 class="my-4 text-center">Noticias</h2>
+        </div>
         <div class="row">
           
           <div class="col-xl-12 col-lg-12 col-md-12 col-12">
@@ -449,7 +477,16 @@
 </article>
 
 
- 
+<nav class="navbar fixed-bottom bg-white d-lg-none navbar-bottom">
+    <div class="container menu">
+        <ul class="container-fluid d-flex justify-content-between">
+            <li id="menu-item-4596" class="menu-item active "><a href="#" aria-current="page"><i class="fi fi-rr-home"></i></a></li>
+            <li id="menu-item-4612" class="menu-item "><a href="#"><i class="fi fi-rr-interface"></i></a></li>
+            <li id="menu-item-4599" class="menu-item "><a href="#"><i class="fi fi-rr-computer"></i></a></li>
+            <li id="menu-item-4758" class="menu-item "><a href="#"><i class="fi fi-rr-comment"></i></a></li>
+        </ul>
+    </div>
+  </nav>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
