@@ -10,11 +10,17 @@
 
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
 
-    
-    <!-- Custom styles for this template -->
-    <link href="navbar.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700;800&display=swap" rel="stylesheet">
 
 <style>
+    body{        
+    color: #363F49;
+    font-family: 'Montserrat', sans-serif;
+    }
+
     .atajos i.fi{
         font-size: 48px;
     }
@@ -28,7 +34,7 @@
     }
 
     .navbar i {
-        font-size: 16px;
+        margin-right: 4px;
     }
 
     .navbar-bottom a{
@@ -67,7 +73,7 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top" aria-label="Menu principal" style="box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.05);">
         <div class="container">
             <a class="navbar-brand" href="#">
-                <img src=LBDTwLogo.svg" alt="" width="30" height="24" class="d-inline-block align-text-top">
+                <img src="assets/brand/LBDTwLogo.svg" alt="" width="30" height="24" class="d-inline-block align-text-top">
                 LBDTw
               </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
@@ -96,6 +102,22 @@
 
 
 <main>
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-6 col-6 d-flex align-items-center justify-content-center text-center">
+                <h2 class="description-sit fw-bold">Politicamente
+                    <br>
+                    <span id="typing"></span><span class="type-cursor">|</span>
+                </h2>
+            </div>
+            <div class="col-6">
+                <img src="./assets/Vegetti.png" class="img-fluid" alt="">
+            </div>
+        </div>
+    </div>
+
+
+
 <div class="container my-4">
 
     <!-- Banner/Ribbons partidos (opcional) -->
@@ -385,7 +407,38 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-
+    <script>
+        var pos = 0;
+        var turn = 0;
+        var data = ['Correctos(?','Incorrectos'];
+        var speed = 200;
+      
+        setTimeout(typeWriter, speed);
+      
+        function typeWriter() {
+          if (pos < data[turn].length) {
+            document.getElementById("typing").innerHTML += data[turn].charAt(pos);
+            pos++;
+            setTimeout(typeWriter, speed);
+          } else {
+            setTimeout(erase, speed+100);
+          }
+        }
+      
+        function erase() {
+          if (pos >= 0) {
+              var str=data[turn].toString().substring(0, pos);
+              document.getElementById("typing").innerHTML = str;
+              pos--;
+              setTimeout(erase, speed-100);
+            } else {
+              turn++;
+              if(turn>=data.length)
+                turn=0;
+              setTimeout(typeWriter, speed);
+            }
+        }
+        </script>
       
   </body>
 </html>
