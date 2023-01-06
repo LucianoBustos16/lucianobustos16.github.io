@@ -227,7 +227,7 @@
                 <!-- Image -->
                 <div class="col-lg-6 position-relative">
 
-                    <img src="img/bg-mobile.png" class="rounded w-100" alt="">
+                    <img src="bg-mobile.png" class="rounded w-100" alt="">
 
                     <!-- Svg decoration -->
                     <figure class="position-absolute end-0 bottom-0">
@@ -280,10 +280,6 @@
                         </svg>
                     </figure>
 
-                    
-
-                    <!-- Round image group -->
-                    
                 </div>
             </div>
             <!-- Content and Image END -->
@@ -302,7 +298,7 @@
                                     <i class="bi bi-geo-alt fs-3 me-2 mt-2"></i>
                                     <!-- Select input -->
                                     <div class="flex-grow-1">
-                                        <a href="#" class="btn btn-primary mb-0">¿Qúe es la prueba infamily?</a>
+                                        <a href="#prubaInfamily" class="btn btn-primary mb-0">¿Qúe es la prueba infamily</a>
                                     </div>
                                 </div>
                             </div>
@@ -313,7 +309,7 @@
                                     <i class="bi bi-geo-alt fs-3 me-2 mt-2"></i>
                                     <!-- Select input -->
                                     <div class="flex-grow-1">
-                                        <a href="#" class="btn btn-primary mb-0">¿Como ingreso?</a>
+                                        <a href="#Access" class="btn btn-primary mb-0">¿Como ingreso a Bancón Rediseño?</a>
                                     </div>
                                 </div>
                             </div>
@@ -324,7 +320,7 @@
                                     <i class="bi bi-geo-alt fs-3 me-2 mt-2"></i>
                                     <!-- Select input -->
                                     <div class="flex-grow-1">
-                                        <a href="#" class="btn btn-primary mb-0">¿Como genero evidencia?</a>
+                                        <a href="#UpluadBugs" class="btn btn-primary mb-0">¿Cómo realizo las pruebas?</a>
                                     </div>
                                 </div>
                             </div>
@@ -346,7 +342,7 @@
                     <!-- Title -->
                     <div class="row mb-3 mb-sm-4">
                         <div class="col-12 text-center">
-                            <h2 class="fw-bold">Prueba inFamily</h2>
+                            <h2 class="fw-bold" id="prubaInfamily">Prueba inFamily</h2>
                         </div>
                     </div>
 
@@ -439,7 +435,7 @@
             <!-- Title -->
             <div class="row">
                 <div class="col-lg-10 col-xl-8 mx-auto">
-                    <h2 class="mb-4 text-center fw-bold">¿Como ingreso a Bancón Rediseño?</h2>
+                    <h2 class="mb-4 text-center fw-bold" id="Access">¿Como ingreso a Bancón Rediseño?</h2>
 
                     <!-- FAQ START -->
                     <div class="accordion accordion-icon accordion-bg-light" id="accordionFaq">
@@ -524,8 +520,6 @@
                         </div>
 
 
-                        
-
 
                     </div>
                     <!-- FAQ END -->
@@ -541,51 +535,67 @@
             <!-- Title -->
             <div class="row">
                 <div class="col-lg-10 col-12 mx-auto">
-                    <h2 class="mb-4 text-center fw-bold">Procedimiento para generar evidencias</h2>
+
+                    <h2 class="mb-4 text-center fw-bold" id="UpluadBugs">¿Cómo realizo las pruebas?</h2>
 
                     <ol>
-                        <li>Se comparte con cada Gcia el Excel de Escenarios con las HU y Test Cases propios de cada
-                            funcionalidad.
-                            Además de los casos asignados, se indican los flujos completos que cada dueño de producto
-                            debe probar
-                            (Camino feliz). </li>
-                        <li>Además de lo que es propio de cada Producto/Gerencia, el usuario debe navegar, transaccionar
-                            y reportar
-                            cualquier error que detecte en la plataforma. </li>
-                        <li>Los errores se reportan por el grupo “Pruebas in family” en WORKPLACE. Se deberá adjuntar
-                            una captura
-                            del error, indicar brevemente el paso a paso y mencionar el CUIT del usuario que testea. El
-                            mismo grupo
-                            será utilizado para solventar las diferentes dudas y/o inconvenientes que tengan los
-                            testers.</li>
-                        <li>Además de reportar por WP, se deberá guardar la evidencia en Plantilla Word “Pruebas in
-                            family Rediseño
-                            – Evidencias” que contenga la siguiente información:
-                            <ul>
-                                <li>User Story ID</li>
-                                <li>Test Case ID</li>
-                                <li>Descripción del error (paso a paso).</li>
-                                <li>CUIT del usuario que realiza la prueba</li>
-                                <li>Captura de pantalla</li>
-                                <li>El nombre del archivo tiene que tener el Test Case ID asignado al Caso de Uso en el
-                                    Excel
-                                    (Ejemplo: 54338 – Pruebas in family Rediseño – Evidencias”)</li>
-                            </ul>
+                        <li>El usuario deberá ingresar a la carpeta compartida {compartida} y seleccionar 
+                            la subcarpeta de la Gcia. a la cual pertenece. 
                         </li>
-                        <li>Reporte de evidencia: En primera instancia, en la barra de explorador de tareas se debe
-                            buscar la
-                            siguiente carpeta compartida {servidor} y luego presionar “Abrir”
-                            Una vez que hayas ingresado, te aparecerá una carpeta con el nombre de “Bancón- Prueba In
-                            Family”, en
-                            donde dentro de las mismas tiene creadas diferentes carpetas por Gerencias. Dentro de dichas
-                            carpetas,
-                            cada tester, deberá adjuntar el archivo Word con la evidencias de cada historia de usuario.
 
+                        <li>En cada subcarpeta, tendrá disponible el Excel <b>Escenarios Infamily”</b> con los Temas y Casos de uso 
+                            por cada funcionalidad. Reflejar el Resultado de la prueba: OK/Error.                            
                         </li>
                     </ol>
 
+                    <div>
+                        <h4>Generar evidencia</h4>
+
+                        <ol>
+                            <li>
+                                Cada colaborador deberá guardar evidencia <b>tanto para los casos OK como para los Errores que hubiere detectado.</b>
+                            </li>
+                            <li> Cada subcarpeta contiene una plantilla Word <b>Pruebas in family Rediseño – Evidencias</b> que deberá ser completada con la siguiente información:
+                                <ul>
+                                    <li>Tema ID</li>
+                                    <li>Caso de Uso ID</li>
+                                    <li>Descripción de la funcionalidad (en caso de tratarse de un error, indicar el paso a paso)</li>
+                                    <li>CUIT del usuario que realiza la prueba</li>
+                                    <li>Captura de pantalla (Últimas 2 o 3 pantallas previo a finalizar el proceso o encontrar el error)</li>
+                                    <li>El nombre del archivo tiene que anteceder con el Caso de Uso ID.</li>
+                                </ul>
+
+                            </li>
+
+                        </ol>
+                    </div>
+
+                    <div>
+                        <h4>Reporte de errores</h4>
+
+                        <p>Los errores o inconsistencias que se detecten durante la prueba deben ser reportados en
+                            el grupo <b>Pruebas In family</b> en <b>WORKPLACE.</b>
+                            Aplica tanto para los Casos de Uso asignados a cada Gerencia como así también cualquier 
+                            Desvío que detecten operando con cualquier funcionalidad en Bancón Beta.
+                            </p>
+
+                        <p>Se deberá adjuntar:</p>
+                        <ol>
+                            <li>
+                                Captura de pantalla del error
+                            </li>
+                            <li>CUIT del colaborador que realiza el test
+                            </li>
+                            <li>
+                                Comentar brevemente el PASO a PASO hasta llegar al error.
+                            </li>
+
+                        </ol>
+                    </div>
+
                 </div>
             </div>
+
         </div>
     </section>
 
