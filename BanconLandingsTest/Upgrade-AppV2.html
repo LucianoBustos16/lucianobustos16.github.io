@@ -53,6 +53,12 @@ margin: 0;">
             min-height: 100vh;
         }
 
+        header{
+            display: flex;
+            justify-content: flex-end;
+            margin: 0 16px;
+        }
+
         .section-intro h1 {
             color: #fff;
             font-size: 2.5rem;
@@ -87,9 +93,16 @@ margin: 0;">
             justify-content: center;
         }
 
+        .eo-img img{
+            margin: auto;
+            max-height: 350px;
+        }
+
         #content-wrap {
             padding: 16px;
             padding-bottom: 140px;
+            max-width: 500px;
+            margin: auto;
             /* Footer height */
 
         }
@@ -109,11 +122,12 @@ margin: 0;">
 
 
 <body>
-    <header>
-        <img src="https://www.bancor.com.ar/static/images/header/logo150.png" alt="Logo 150 años"
-            style="max-width: 100px;">
-    </header>
+
     <div class="page-container">
+        <header>
+            <img src="https://www.bancor.com.ar/static/images/header/logo150.png" alt="Logo 150 años"
+                style="max-width: 100px;">
+        </header>
         <div id="content-wrap">
             <section class="section-intro " >
                 <h1>
@@ -144,7 +158,7 @@ margin: 0;">
                         <img alt="Descarga Bancón en App Store." src="https://www.bancor.com.ar/static/3a5fcf6d86ca04fec2d6e9a631596c45/apple_0.png">
                     </a>
                 </div>
-                <div>
+                <div class="eo-img">
                     <img src="Eo-mobile.png" alt="Eo disfrutando el nuevo Bancoón">
                 </div>
     
